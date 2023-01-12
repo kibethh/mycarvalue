@@ -4,7 +4,6 @@ import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { UsersModule } from './users/users.module';
 import { ReportsModule } from './reports/reports.module';
-import { UsersController } from './users/users.controller';
 import { User } from './users/user.entity';
 import { Report } from './reports/report.entity';
 
@@ -14,13 +13,12 @@ import { Report } from './reports/report.entity';
       type: 'sqlite',
       database: 'db.sqlite',
       entities: [User, Report],
-
       synchronize: true,
     }),
     UsersModule,
     ReportsModule,
   ],
-  controllers: [AppController, UsersController],
+  controllers: [AppController],
   providers: [AppService],
 })
 export class AppModule {}
