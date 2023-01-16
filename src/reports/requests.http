@@ -3,6 +3,11 @@ POST http://localhost:3000/reports
 Content-Type: application/json
 
 {
-    "email": "test@test.com",
-    "password": "12345"
+    "make": "toyota",
+    "model": "latest",
+    "year": 2020,
+    "mileage": 1000,
+    "lng": 23.45566,
+    "lat": 3.45566,
+    "price": 499000
 }
